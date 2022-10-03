@@ -1,0 +1,132 @@
+/* ------------- FONTS ------------- */
+@font-face {
+  font-family: 'test';
+  src: url('test.woff') format('woff');
+}
+
+/* ------------- STARTER ------------- */
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+	background-color: #252934;
+	color: white;
+}
+.welcome {
+    text-align: center;
+    padding-bottom: 100px;
+    font-family: 'test';
+    font-size: 50;
+
+}
+
+/* ------------- TRANSITIONS AND SHADOWS ------------- */
+
+a, a:visited, a:hover, .box .box-container:hover, .box .box-container {
+	-webkit-transition: all 150ms ease-in-out;
+	-moz-transition: all 150ms ease-in-out;
+	-ms-transition: all 150ms ease-in-out;
+	-o-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+}
+
+.box .box-container:hover {
+	-webkit-box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.75);
+}
+
+.container form, .box .box-container {
+	-webkit-box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.25);
+	-moz-box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.25);
+	box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.25);
+}
+
+/* ------------- CONTAINER STYLING ------------- */
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+
+/* ------------- LINK STYLING ------------- */
+
+a, a:visited {
+	color: #6C7789;
+}
+
+a:hover {
+	color: white;
+}
+
+a, a:visited, a:hover {
+	text-decoration: none;
+
+}
+
+.box .box-container a {
+	display: block;
+	font-family: 'test';
+	font-size: 28px;
+	padding: 20px 0 0 15px;
+	text-align: left;
+}
+
+/* ------------- TIME STYLING ------------- */
+
+.container .time {
+	font-family: 'test';
+	font-size: 120px;
+	margin-bottom: 20px;
+}
+
+/* ------------- BOX STYLING ------------- */
+
+.box {
+	display: flex;
+	justify-content: center;
+	width: 950px;
+}
+
+.box .box-container {
+	background-color: #2E3441;
+	width: 200px;
+	padding:25px 10px;
+	border-radius: 5px;
+}
+
+.box .box-container:not(:last-child) {
+	margin-right: 50px;
+}
+
+.box .box-container .heading {
+	margin: 25px 0 9px 15px;
+	font-family: 'test';
+	font-size: 33px;
+	text-align: left;
+}
+
+
+
+
+
+/* ------------- MEDIA QUERY ------------- */
+
+@media only screen and (max-width: 985px) {
+	.box-container:nth-child(4), .box-container:nth-child(3) {
+		margin-top: 50px;
+	}
+	.box .box-container:nth-child(2), .box .box-container:nth-child(4) {
+		margin-right: 0;
+	}
+	.box {
+		width: 450px;
+	}
+}
