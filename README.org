@@ -2,5 +2,5 @@
 #+author: Thanos_Apo11o
 
 ** About
-+ Personal startpage
++ Personal startpage for qutebrowser
 + link [[https://thanosapollo.github.io/startpage/][here]]
