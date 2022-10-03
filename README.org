@@ -1,4 +1,4 @@
-#+title: Readme
+#+title: Startpage | My personal startpage
 #+author: Thanos_Apo11o
 
 ** About
